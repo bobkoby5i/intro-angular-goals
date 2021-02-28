@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class DataService {
 
-  private goals = new BehaviorSubject<any>(['the initial goal','Another goal','Third goal'])
+  private goals = new BehaviorSubject<any>(['sailing','skiing','scuba diving'])
   goal = this.goals.asObservable();
 
   constructor() { }
